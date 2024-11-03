@@ -33,9 +33,7 @@ if __name__ == "__main__":
     np.random.seed(40)
 
     # Read the wine-quality csv file from the URL
-    data = pd.read_csv("red-wine-quality.csv")
-    #os.mkdir("data/")
-    data.to_csv("data/red-wine-quality.csv", index=False)
+    data = pd.read_csv("data/red-wine-quality.csv")
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
     train.to_csv("data/train.csv")
